@@ -3,19 +3,16 @@ body{
 }
 
 .bem{
-    height: 500px;
-    text-align:center;
-    font-family: "Antic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(255, 255, 255);
+color: aliceblue;
+display: flex ;
+flex-direction: row;
+justify-content: center;
 }
 
 .texto{
-    height: 500px;
-    text-align:center;
-    font-family: "Antic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(255, 255, 255);
+  color: aliceblue;
+}
+
+.segundo{
+  color: aliceblue;
 }
