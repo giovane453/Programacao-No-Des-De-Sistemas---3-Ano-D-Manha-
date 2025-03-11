@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.bem{
+color: aliceblue;
+display: flex ;
+flex-direction: row;
+justify-content: center;
+}
+
+.texto{
+  color: aliceblue;
+}
+
+.segundo{
+  color: aliceblue;
+}
+
+
