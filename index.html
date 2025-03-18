@@ -35,8 +35,9 @@
 <body>
 
     <script type="module">
-        // Import the f
-        *{Ks for Firebase products that you want to use
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
       
         // Your web app's Firebase configuration
@@ -51,24 +52,9 @@
       
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-        Set/ref(DB, 'usuarios/' +login,{
-            login: login,
-            senha: senha
-        })
+      </script>
 
-        then(()=> {
-            alert ("usuário cadastrado com sucesso!")
-            location.href="index.html";
-        }
-        )
-
-
-
-
-
-
-
-
+       
       </script>
       <div class="logo"><img src="assets/logo.png" alt="auto"> </div>
     <form>
