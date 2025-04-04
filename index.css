@@ -4,11 +4,9 @@ body{
 .cadastro{
     color: aliceblue;
 }
-.dragao{
-height: 700px;
-}
+
 .logo{
-    width: 25%;
-    margin: auto;
-    
+    height: 500px;
+    width:500px;
+    border-radius: 20px
 }
