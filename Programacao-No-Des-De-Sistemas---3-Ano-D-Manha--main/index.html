@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkness Gym Cadastro </title>
+    <link rel="icon" href="secreto.png">
+    <link rel="stylesheet" href="index.css" />
+ <img src="assets/logo.jpg" class="logo">
+  <style> 
+
+        *{
+            box-sizing: border-box;
+        }
+
+        form{
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+        }
+
+        input{
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    <?php
+    class Database {
+        private $host = "localhost";
+        private $dbname = "exemplo_poo";
+        private $username = "root";
+        private $password = "";
+        private $conn;
+    
+        public function __construct() {
+            try {
+                $this->conn = new PDO("mysql:host={$this->host};dbname={$this->dbname}", $this->username, $this->password);
+                $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            } catch (PDOException $e) {
+                die("Erro de conexão: " . $e->getMessage());
+            }
+        }
+    
+        public function getConnection() {
+            return $this->conn;
+        }
+    }
+    ?>
+
+    <?php
+require_once 'Database.php';
+
+class Usuario {
+    protected $db;
+
+    public function __construct() {
+        $this->db = (new Database())->getConnection();
+    }
+
+    public function login($email, $senha) {
+        $sql = "SELECT * FROM usuarios WHERE email = :email";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindParam(':email', $email);
+        $stmt->execute();
+        $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($usuario && password_verify($senha, $usuario['senha'])) {
+            return true;
+        }
+        return false;
+    }
+}
+?>
+
+<?php
+require_once 'Usuario.php';
+
+$email = $_POST['email'];
+$senha = $_POST['senha'];
+
+$usuario = new Usuario();
+
+if ($usuario->login($email, $senha)) {
+    echo "<script>alert('Login feito com sucesso!'); window.location.href='home.html';</script>";
+} else {
+    echo "<script>alert('Email ou senha inválidos'); window.location.href='index.html';</script>";
+}
+?>
+       
+      </script>
+
+    <form>
+    <div class="cadastro" > <h3>Cadastro</h3> </div>
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="text" placeholder="Email" id="email">
+        <input type="string" placeholder="Telefone" id="tel">
+        <input type="submit" onclick="logar(); return false">
+
+    </form>
+    <script>
+
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+            var email = document.getElementById('email').value;
+            var tel = document.getElementById('tel').value;
+
+
+            if(login == "admin" && senha == "admin" && email == "giovane@gmail" && tel == "4170989080"){
+                alert('Sucesso');
+                location.href = "home.html";
+            }else{
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
