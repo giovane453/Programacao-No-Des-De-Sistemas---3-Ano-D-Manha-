@@ -40,12 +40,10 @@ justify-content: center;
   }
 
   .nav-list li a {
-    color: white;
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    transition: all 0.3s ease;
     position: relative;
   }
 
@@ -54,9 +52,11 @@ justify-content: center;
     /* Altere esta cor para a cor desejada ao passar o mouse */
   ;
   transition: 0.5s all;
+  /* cor suave trans*/
   position: relative;
   height: 50px;
   top: -5px;
+ 
   }
 
   .nav-list li a {
@@ -65,6 +65,7 @@ justify-content: center;
     font-weight: bold;
   }  
  
+  
   footer {
     background: linear-gradient(145deg, #218955, #000000);
     padding: 2.5rem 1rem;
@@ -79,12 +80,10 @@ justify-content: center;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    
-    border-spacing: 0 10px;
-  }
+    border-spacing: 0 0px;
+     }
 
   footer th {
-    padding: 8px 0;
     font-weight: normal;
     text-align: center;
     position: relative;
@@ -100,7 +99,7 @@ justify-content: center;
 
   footer tr:nth-child(2) th {
     font-size: 1.2rem;
-    color: #a8d8ff;
+    color: #1bbfb4;
     padding-top: 10px;
     padding-bottom: 20px;
   }
@@ -125,21 +124,18 @@ justify-content: center;
   }
 
   footer tr:nth-child(3) a {
-    color: #64f0ff;
+    color: #0d57f8;
   }
 
   footer tr:nth-child(4) a {
-    color: #76ff64;
+    color: #1a7bf1;
   }
 
-  footer a:hover {
-    background: rgba(255, 255, 255, 0.1);
-    text-decoration: none;
-  }
+  
 
   footer tr:last-child th {
     font-size: 0.95rem;
-    color: #c2e1ff;
+    color: #ffffff;
     padding-top: 25px;
     font-style: italic;
   }
@@ -161,3 +157,4 @@ justify-content: center;
     footer th {
       font-size: 0.9rem;
     }
+  }
