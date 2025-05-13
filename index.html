@@ -28,38 +28,54 @@
         }
 
         .logo {
-            height: 200px; /* Reduzido para 200px */
-            width: 200px;  /* Reduzido para 200px */
+            height: 200px; 
+            width: 200px;  
             border-radius: 20px;
             display: block;
-            margin: 0 auto 10px; /* Espaço reduzido abaixo da logo */
+            margin: 0 auto 10px;
             object-fit: cover;
         }
 
         form {
             width: 300px;
-            margin: 10px auto; /* Espaço reduzido acima do formulário */
+            margin: 10px auto; 
             text-align: center;
         }
-
         input {
             display: block;
             margin: 10px auto;
             width: 250px;
             height: 30px;
         }
+        
+        .cadastro-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        
+        .cadastro-btn:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
     <img src="assets/logo.jpg" class="logo">
     <form>
-        <div class="cadastro"><h3>Cadastro</h3></div>
+        <div class="cadastro"><h3>Login</h3></div>
         <input type="text" placeholder="Login" id="login">
         <input type="password" placeholder="Senha" id="senha">
         <input type="text" placeholder="Email" id="email">
         <input type="string" placeholder="Telefone" id="tel">
         <input type="submit" onclick="logar(); return false">
     </form>
+    <a href="cadastro.html" class="cadastro-btn">Cadastro</a>
     <script>
         function logar() {
             var login = document.getElementById('login').value;
