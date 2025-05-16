@@ -75,11 +75,11 @@ h1 {
     font-size: 0.8rem;
     font-weight: bold;
 }
-
+/* letras */
 .plan-title {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #fff;
+    color: #fb1b1b;
 }
 
 .plan-price {
@@ -87,6 +87,7 @@ h1 {
     font-weight: bold;
     margin-bottom: 20px;
     color: #4CAF50;
+    
 }
 
 .plan-price span {
@@ -123,10 +124,9 @@ h1 {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background 0.3s;
-    border: none;
-    cursor: pointer;
     font-size: 1rem;
+    border: none;
+    
 }
 
 .plan-button:hover {
