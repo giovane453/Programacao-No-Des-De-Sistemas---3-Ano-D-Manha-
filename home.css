@@ -1,6 +1,5 @@
-/* Estilos gerais */
 body {
-  background-color: #121212;
+  background-color: #000000;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
@@ -9,7 +8,6 @@ body {
   min-height: 100vh;
 }
 
-/* Imagens laterais */
 body::before,
 body::after {
   content: "";
@@ -43,7 +41,6 @@ body:hover::after {
   opacity: 0.8;
 }
 
-/* Conteúdo principal */
 .main-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -51,16 +48,15 @@ body:hover::after {
   position: relative;
 }
 
-/* Cabeçalho */
 .bem {
   color: #ffffff;
   display: flex;
   justify-content: center;
   text-align: center;
   padding: 4rem 1rem;
-  background: linear-gradient(135deg, #1a2a3a 0%, #000000 100%);
+  background: linear-gradient(135deg, #000000 0%, #000000 100%);
   margin-bottom: 3rem;
-  border-bottom: 3px solid #027611;
+  border-bottom: 3px solid #45a049;
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
   position: relative;
   z-index: 1;
@@ -73,7 +69,6 @@ body:hover::after {
   margin: 0;
 }
 
-/* Seções de texto */
 .texto, .segundo {
   color: #e0e0e0;
   max-width: 100%;
@@ -83,7 +78,7 @@ body:hover::after {
   background-color: rgba(30, 30, 30, 0.7);
   border-radius: 8px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-  border-left: 4px solid #027611;
+  border-left: 4px solid#45a049;
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
@@ -96,7 +91,7 @@ body:hover::after {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #027611, transparent);
+  background: linear-gradient(90deg, #45a049, transparent);
 }
 
 .texto:hover, .segundo:hover {
@@ -110,9 +105,8 @@ body:hover::after {
   margin: 0;
 }
 
-/* Navegação */
 .navbar {
-  background: linear-gradient(135deg, #1a2a3a 0%, #000000 100%);
+  background: linear-gradient(135deg, #000000 0%, #000000 100%);
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -150,7 +144,7 @@ body:hover::after {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #027611;
+  background-color: #45a049;
   transition: width 0.3s ease;
 }
 
@@ -159,18 +153,17 @@ body:hover::after {
 }
 
 .nav-list li a:hover {
-  color: #027611;
+  color: #45a049;
   transform: translateY(-3px);
 }
 
-/* Rodapé */
 footer {
-  background: linear-gradient(145deg, #1a2a3a 0%, #000000 100%);
+  background: linear-gradient(145deg, #000000 0%, #000000 100%);
   padding: 3rem 1rem;
   text-align: center;
   position: relative;
   margin-top: 3rem;
-  border-top: 3px solid #027611;
+  border-top: 3px solid #45a049;
 }
 
 footer table {
@@ -208,11 +201,11 @@ footer a {
   transition: all 0.3s ease;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  background-color: rgba(2, 118, 17, 0.2);
+  background-color: #45a049;
 }
 
 footer a:hover {
-  background-color: rgba(2, 118, 17, 0.5);
+  background-color: #45a049;
   transform: scale(1.05);
 }
 
@@ -223,7 +216,6 @@ footer tr:last-child th {
   font-style: italic;
 }
 
-/* Animações */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
