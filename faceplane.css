@@ -1,5 +1,3 @@
-
- /* Reset e estilos globais */
  * {
     margin: 0;
     padding: 0;
@@ -8,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #333, #027611aa);
+    background: linear-gradient(to bottom, #000000, #45a049);
     background-attachment: fixed;
     min-height: 100vh;
     color: #ffffff;
@@ -38,7 +36,6 @@ h1 {
     margin: 0 auto;
 }
 
-/* Estilos dos planos */
 .plans-container {
     display: flex;
     justify-content: center;
@@ -48,7 +45,7 @@ h1 {
 }
 
 .plan {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 30px;
     width: 100%;
@@ -62,7 +59,7 @@ h1 {
 }
 
 .plan.recommended {
-    border: 2px solid #4CAF50;
+    border: 2px solid #45a049;
     position: relative;
 }
 
@@ -70,14 +67,14 @@ h1 {
     position: absolute;
     top: -15px;
     right: 20px;
-    background: #4CAF50;
-    color: white;
+    background: #45a049;
+    color: rgb(0, 0, 0);
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: bold;
 }
-/* letras */
+
 .plan-title {
     font-size: 1.8rem;
     margin-bottom: 15px;
@@ -88,7 +85,7 @@ h1 {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #4CAF50;
+    color: #45a049;
     
 }
 
@@ -104,14 +101,14 @@ h1 {
 
 .plan-features li {
     padding: 8px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
 }
 
 .plan-features li::before {
     content: "✓";
-    color: #4CAF50;
+    color: #45a049;
     margin-right: 10px;
     font-weight: bold;
 }
@@ -120,7 +117,7 @@ h1 {
     display: inline-block;
     width: 100%;
     padding: 12px;
-    background: #4CAF50;
+    background: #45a049;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -135,7 +132,6 @@ h1 {
     background: #45a049;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .plans-container {
         flex-direction: column;
