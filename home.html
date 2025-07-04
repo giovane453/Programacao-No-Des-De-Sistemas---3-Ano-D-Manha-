@@ -1,77 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <title>Darkness Gym</title>
-    <link rel="icon" href="assets/secreto.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <title>hungry wolf</title>
+
 </head>
+
 <body>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="file:///C:/Users/soare/Downloads/low.html--main/low.html--main/selva/selva.html">Página Inicial</a></li>
-            <li><a href="faceplane.html">Planos</a></li>
-            <li><a href="">Contato</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-        </ul>
-    </nav>
-
-    <div class="main-content">
-        <div class="bem"><h1>Bem-vindos à Darkness Gym, onde seus limites são apenas o começo!</h1></div>
-        
-        <div class="texto">
-            <h3>Na Darkness Gym, oferecemos pré-treinos próprios formulados para aumentar sua energia, foco e desempenho. Nossos pré-treinos exclusivos são desenvolvidos com ingredientes de alta qualidade para maximizar os resultados dos seus treinos. Venha experimentar e descubra a diferença!</h3>
-        </div>
-
-        <div class="segundo">
-            <h3>Na Darkness Gym, acreditamos que cada treino é uma oportunidade para superar desafios e alcançar novos patamares de força, resistência e bem-estar. Nossa academia é equipada com aparelhos de última geração e oferece um ambiente motivador e acolhedor para todos, desde iniciantes até atletas experientes. Com uma equipe de treinadores qualificados e apaixonados pelo que fazem, estamos prontos para orientar e inspirar você em cada etapa da sua jornada fitness. Oferecemos uma variedade de aulas, incluindo musculação, HIIT, funcional e muito mais, para que você possa encontrar o que melhor se adapta aos seus objetivos e preferências. Junte-se a nós na Darkness Gym e descubra como é sentir a verdadeira transformação do corpo e da mente. Prepare-se para brilhar na escuridão!</h3>
-        </div>
+  <header>
+    <div class="logo">
+      <img src="assets/minhalogo.png" alt="Logo da marca" width="75" height="75" style="border-radius:50% ;">
     </div>
+    <nav>
+      <ul>
+        <div>
+          <div>
+            <input type="search" id="form1" placeholder="buscar na galeria" />
+            <label for="form1"></label>
+          </div>
+          <button type="button">
+            <i></i>
+          </button>
+        </div>
 
-    <footer>
-        <table>
-            <tr>
-                <th>© 2025 Todos os direitos reservados</th>
-            </tr>
-            <tr>
-                <th>Entre em contato:</th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="mailto:contato@antonio.junior@escola.pr.gov.br" title="Enviar email">
-                   @antonio.junior@escola.pr.gov.br
-                    </a>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="mailto:giovane@escola.pr.gov.br" title="Enviar email">
-                        giovane.campanha@escola.pr.gov.br
-                    </a>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="tel:+5555984223666" title="Ligar agora">
-                        (55) 98422-3666
-                    </a>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="tel:+5555984223666" title="Ligar agora">
-                        (55) 98422-3666
-                    </a>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    Criadores: Antonio Soares da Silva Junior | Nº4 | 3ºD e Giovane Rafael Alves Campanha | Nº9 | 3ºD
-                </th>
-            </tr>
-        </table>
-    </footer>
+
+        <li><a href="#">salgados</a></li>
+        <li><a href="#">doces</a></li>
+        <li><a href="#">bebidas</a></li>
+        <li><a href="#">Hambúrguer</a></li>
+        <li><a href="#">pizza</a></li>
+        <li><a href="#">CONTATO</a></li>
+        <li><a href="http://localhost/arcadianismo-main/arcadianismo-main/" class="login-btn">LOGIN</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!doctype html>
+  <html lang="pt-BR">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carrossel Simples</title>
+    </head>
+
+  <body>
+
+   <div class="carousel">
+  <div class="carousel-inner" id="carousel-inner">
+    <div class="carousel-slide slide1"><img src="assets/tenta.png" alt=""></div>
+    <div class="carousel-slide slide2"><img src="assets/ima1.jpg" alt=""></div>
+    <div class="carousel-slide slide3"><img src="assets/arranjo.png" alt=""></div>
+  </div>
+  <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+  <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+</div>
+
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll(".carousel-slide");
+
+  function moveSlide(step) {
+    currentIndex += step;
+    if (currentIndex < 0) currentIndex = slides.length - 1;
+    if (currentIndex >= slides.length) currentIndex = 0;
+    document.getElementById("carousel-inner").style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+</script>
+   <div class="plans-container">
+            <!-- Plano Básico -->
+            <div class="plan">
+               
+              <img src="https://recipes.net/wp-content/uploads/2023/05/papa-johns-pepperoni-pizza-recipe_73a08afc185dba371d10414961f2cb0c.jpeg" height="300px" width="300px">
+                  <div class="plan-price">R$150<span></span></div>
+                <button class="plan-button">COMPRAR</button>
+            </div>
+ 
+  <main>
+    <h1 class="exhibition-title">DELIVERE</h1>
+    <p class="exhibition-subtitle">FAÇA JÁ O SEU PEDIDO</p>
+    <p class="date">2025</p>
+    <a href="#" class="cta-button">VISITE A LOJA </a>
+    <p class="chat-invite">Vamos conversar</p>
+  </main>
+
+  <footer>
+    © 2025 Galeria de Artesanato. Todos os direitos reservados.
+  </footer>
 </body>
+
 </html>
